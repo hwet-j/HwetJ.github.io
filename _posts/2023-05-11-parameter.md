@@ -3,6 +3,7 @@ layout: post
 title:  "매개변수의 개수를 모르는 경우"
 date:   2023-05-11 15:00
 categories: Java
+thumbnail: /assets/img/posts/java.png
 tags: parameter
 ---
 

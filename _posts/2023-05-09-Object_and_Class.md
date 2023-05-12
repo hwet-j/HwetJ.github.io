@@ -3,6 +3,7 @@ layout: post
 title:  "객체, 클래스, 인스턴스"
 date:   "2023-05-09 16:00"
 categories: Java
+thumbnail: /assets/img/posts/java.png
 tags: Object Class Instance 용어 면접
 comments: 1
 ---
