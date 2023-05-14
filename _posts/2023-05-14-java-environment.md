@@ -4,7 +4,7 @@ title:  "자바 개발환경 설치"
 date:   2023-05-14 13:00
 categories: Java
 thumbnail: /assets/img/posts/java.png
-tags: 객체지향
+tags: OOP JDK Environment
 comments: 1
 ---
 
