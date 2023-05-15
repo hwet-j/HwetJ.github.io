@@ -89,11 +89,6 @@ static은 클래스의 소속인데 클래스가 인스턴스 변수에 접근 �
 <p>인스턴스 멤버가 존재하는 시점에 클래스 멤버는 항상 존재하지만, 클래스 멤버가 존재하는 시점에서는 인스턴스 멤버가 존재하지 않을 수 있기 때문이다. <br>
 같은 이유로 클래스 멤버에서 this함수를 사용한 호출은 불가능하다.(this가 참조할 object가 존재하지 않기 떄문)</p>
 
-[
-
-
----------------------](https://hwet-j.github.io/#/)
-
 
 [참고][https://bambookim.tistory.com/17](https://bambookim.tistory.com/17) <br>
 [참고][https://gangnam-americano.tistory.com/20](https://gangnam-americano.tistory.com/20)  <br>

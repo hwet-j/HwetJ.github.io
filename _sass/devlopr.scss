@@ -166,13 +166,88 @@ pre {
     margin:35px;
 }
 
-blockquote {
+/* blockquote {
     margin: 2rem 1rem 1rem;
     padding: 3px;
     background: var(--main-background-color) !important;
-    border: 1px solid;
+    border: 1px solid #00CCCC;
     color: var(--bold-color);
+} */
+.blockquote {
+    padding: 60px 80px 40px;
+    position: relative;
 }
+.blockquote p {
+    font-family: "Utopia-italic";
+    font-size: 35px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+/*blockquote p::before {
+    content: "\f095";
+    font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+  font-size: 180px;
+ }*/
+
+// Blockquote CSS
+blockquote
+  border-left: 3px solid $color
+  color: #1a1a1a
+  font-family: Georgia, Times, "Times New Roman", serif
+  font-size: 1.25em
+  font-style: italic
+  line-height: 1.8em
+  margin: 1.1em -4em
+  padding: 1em 2em
+  position: relative
+  transition: .2s border ease-in-out
+  z-index: 0
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    left: -4px
+    height: 2em
+    background-color: $background
+    width: 5px
+    margin-top: -1em
+  &:after
+    content: "\f35f"
+    position: absolute
+    top: 50%
+    left: -0.5em
+    color: $color
+    font-family: "Ionicons"
+    font-style: normal
+    line-height: 1em
+    text-align: center
+    text-indent: -2px
+    width: 1em
+    margin-top: -0.5em
+    transition: .2s all ease-in-out, .4s transform ease-in-out
+  &.format:before, &.format:after
+    display: none
+  &.book:after
+    content: "\f12e"
+  &.podcast:after
+    content: "\f32d"
+  &.lyrics:after
+    content: "\f333"
+  &.favorite:after
+    content: "\f384"
+  &:active:after
+    transform: rotateY(360deg)
+
+  cite
+    display: block
+    font-size: 0.75em
+    line-height: 1.8em
+    margin-top: 1em
+
 
 /* Scrollbar */
 
