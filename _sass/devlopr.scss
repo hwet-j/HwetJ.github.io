@@ -184,17 +184,17 @@ pre {
     text-align: center;
 }
 
-/*blockquote p::before {
+blockquote p::before {
     content: "\f095";
     font-family: FontAwesome;
    display: inline-block;
    padding-right: 6px;
    vertical-align: middle;
   font-size: 180px;
- }*/
+ }
 
 // Blockquote CSS
-blockquote
+/* blockquote
   border-left: 3px solid $color
   color: #1a1a1a
   font-family: Georgia, Times, "Times New Roman", serif
@@ -246,7 +246,7 @@ blockquote
     display: block
     font-size: 0.75em
     line-height: 1.8em
-    margin-top: 1em
+    margin-top: 1em */
 
 
 /* Scrollbar */
