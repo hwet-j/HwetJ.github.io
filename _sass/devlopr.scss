@@ -166,14 +166,14 @@ pre {
     margin:35px;
 }
 
-/* blockquote {
+blockquote {
     margin: 2rem 1rem 1rem;
     padding: 3px;
     background: var(--main-background-color) !important;
     border: 1px solid #00CCCC;
     color: var(--bold-color);
-} */
-.blockquote {
+}
+/* .blockquote {
     padding: 60px 80px 40px;
     position: relative;
 }
@@ -194,7 +194,7 @@ blockquote p::before {
 }
 
 // Blockquote CSS
-/* blockquote
+ blockquote
   border-left: 3px solid $color
   color: #1a1a1a
   font-family: Georgia, Times, "Times New Roman", serif
