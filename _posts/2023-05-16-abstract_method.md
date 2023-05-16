@@ -16,6 +16,28 @@ comments: 1
 <p>다형성이 보장되는 이유는 추상클래스에서 정의된 <strong style="color=00FFFF">추상 메서드는 반드시 자식 클래스에서 재정의(오버라이딩) 되어야 한다</strong>는 특징 때문이다.</p>
 <p>추상 메소드는 선언부만이 존재하며, 구현부는 작성되어 있지 않습니다. 이 작성되어 있지 않은 구현부를 자식 클래스에서 오버라이딩하여 사용하는 것입니다.</p>
 
+<h3>추상 클래스 선언 방법</h3>
+<p><strong style="color=00FFFF">abstract</strong>키워드를 사용해서 선언한다.</p>
+
+```java
+abstract class 클래스명{
+    abstract 리턴타입 메서드명();
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 https://life-with-coding.tistory.com/487
 
