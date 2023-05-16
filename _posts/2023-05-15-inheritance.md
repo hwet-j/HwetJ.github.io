@@ -44,7 +44,7 @@ comments: 1
 <p>생성자의 생성 순서는 부모 -> 자식 순으로 생성된다. 좀 더 구체적인 순서는 super키워드에 따라 달라진다.</p>
 
 > Case 1 : super 키워드 사용 X, 객체생성 시 매개변수 입력 X
-<details>
+<p><details>
 <summary style="color:#00FF40;">열기/닫기</summary>
 
 {% highlight java %}
@@ -84,23 +84,28 @@ public class Child extends Parent{
     }
 }
 {% endhighlight %}
-
-> 출력 결과
->> 부모 매개변수 : 나라<br>
->> 부모 기본생성자<br>
->> 자식 매개변수 : 이름<br>
->> 자식 기본생성자
+<p>
+<blockquote> 출력 결과
+<blockquote>
+부모 매개변수 : 나라<br>
+부모 기본생성자<br>
+자식 매개변수 : 이름<br>
+자식 기본생성자
+</blockquote>
+</blockquote>
+</p>
 
 <h5>생성자의 생성완료 순서 </h5>
 <p><strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수 -> 자식기본</strong> 순으로 생성자의 생성이 완료된다. </p>
-<h5>흐름도</h5>
-<p>Child child = new Child()로 객체 생성 => (자식) 기본생성자 실행 => (자식) 최초로 생략된 super 키워드로 인해 부모클래스의 기본생성자 실행 => (부모) 기본생성자 this 키워드 => (부모) 매개변수생성자 실행(생성완료) => (부모) 기본생성자의 "부모 기본생성자" 출력 
-(자식) 기본생성자 this 키워드 => (자식) 매개변수생성자 실행(생성완료) => (자식) 기본생성자 "자식 매개변수" 출력</p>
+<h5>흐름도(Debug로 체크)</h5>
+<p>Child child = new Child() => (자식) 기본생성자 실행 => (자식) this키워드로 매개변수생성자 실행 => (자식) 매개변수생성자에서 자동생성된(생략되어있는) 부모의 기본생성자 코드 
+=> (부모) 기본생성자 실행 => (부모) 기본생성자 this 키워드 => (부모) 매개변수생성자 전체실행(코드종료) => (부모) 기본생성자 출력코드 (코드종료)=> (자식) 매개변수생성자 실행코드(코드종료) 
+=> (자식) 기본생성자 출력코드</p>
 
-</details>
+</details></p>
 
 > Case 2 : super 키워드 사용 X, 객체생성 시 매개변수 입력 O
-<details>
+<p><details>
 <summary style="color:#00FF40;">열기/닫기</summary>
 
 {% highlight java %}
@@ -142,13 +147,12 @@ public class Child extends Parent{
 <h5>생성자의 생성완료 순서 </h5>
 <p><strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수</strong> 순으로 생성자의 생성이 완료된다. </p>
 <h5>흐름도</h5>
-<p>Child child = new Child("변수")로 객체 생성 => (자식) 매개변수생성자 실행 => (자식) 최초로 생략된 super 키워드로 인해 부모클래스의 기본생성자 실행 => (부모) 기본생성자 this 키워드 => (부모) 매개변수생성자 실행(생성완료) => (부모) 기본생성자의 "부모 기본생성자" 출력 
-=> (자식) 기본생성자 "자식 매개변수" 출력</p>
+<p>Debug모드로 직접 해보자</p>
 
-</details>
+</details></p>
 
 > Case 3-1 : super 키워드 사용 O, 객체생성 시 매개변수 입력 X (super에 매개변수)
-<details>
+<p><details>
 <summary style="color:#00FF40;">열기/닫기</summary>
 
 {% highlight java %}
@@ -191,7 +195,6 @@ public class Child extends Parent{
 <h5>생성자의 생성완료 순서 </h5>
 <p><strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수</strong> 순으로 생성자의 생성이 완료된다. </p>
 <h5>흐름도</h5>
-<p>Child child = new Child("변수")로 객체 생성 => (자식) 매개변수생성자 실행 => (자식) 최초로 생략된 super 키워드로 인해 부모클래스의 기본생성자 실행 => (부모) 기본생성자 this 키워드 => (부모) 매개변수생성자 실행(생성완료) => (부모) 기본생성자의 "부모 기본생성자" 출력 
-=> (자식) 기본생성자 "자식 매개변수" 출력</p>
+<p>Debug모드로 직접 해보자</p>
 
-</details>
+</details></p>
