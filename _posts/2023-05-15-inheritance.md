@@ -84,16 +84,13 @@ public class Child extends Parent{
     }
 }
 {% endhighlight %}
-<p>
-<blockquote> 출력 결과
-<blockquote>
+<blockquote class="q-card q-card-color"> 출력 결과
+<div class="content">
 부모 매개변수 : 나라<br>
 부모 기본생성자<br>
 자식 매개변수 : 이름<br>
-자식 기본생성자
+자식 기본생성자</div>
 </blockquote>
-</blockquote>
-</p>
 
 <h5>생성자의 생성완료 순서 </h5>
 <p><strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수 -> 자식기본</strong> 순으로 생성자의 생성이 완료된다. </p>

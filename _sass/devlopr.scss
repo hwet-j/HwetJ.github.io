@@ -165,17 +165,30 @@ pre {
 .m10{
     margin:35px;
 }
+blockquote { max-width: 25rem; margin-inline: auto }
 
-blockquote {
-    max-width: 25rem;
-    margin-inline: auto;
-    accent-color: rgb(30 145 254);
-    bg-color: rgb(32 32 54);
-    dot-color: rgb(255 255 255 / .125);
-    text-color: rgb(243 243 243);
-    text-color-author: rgb(243 243 243);
+blockquote.q-card-color{
+  --accent-color: rgb(30 145 254);
+  --bg-color: rgb(32 32 54);
+  --dot-color: rgb(255 255 255 / .125);
+  --text-color: rgb(243 243 243);
+  --text-color-author: rgb(243 243 243);
 }
 
+blockquote.q-card{
+  --padding: 1rem;
+  padding: var(--padding);
+  color: var(--text-color, black);
+  font-weight: 600;
+  background-color: var(--bg-color, white);
+  display: grid;
+  gap: 1rem;
+  background-image: radial-gradient( circle, var(--dot-color, rgb(0 0 0 / .125)) calc(25% - 1px), transparent 25% );
+  background-size: 0.5rem 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgb(0 0 0 / .5)
+
+}
 
 
 
