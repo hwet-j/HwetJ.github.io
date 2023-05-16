@@ -45,7 +45,7 @@ comments: 1
 
 > Case 1 : super 키워드 사용 X, 객체생성 시 매개변수 입력 X
 <p><details>
-<summary style="color:#00FF40;">열기/닫기</summary>
+<summary style="color:#00FF40;">Case 1 설명</summary>
 
 {% highlight java %}
 // 부모 클래스 
@@ -84,8 +84,8 @@ public class Child extends Parent{
     }
 }
 {% endhighlight %}
-<blockquote class="q-card q-card-color"> 출력 결과
-<div class="content">
+<blockquote> 출력 결과
+<div>
 부모 매개변수 : 나라<br>
 부모 기본생성자<br>
 자식 매개변수 : 이름<br>
@@ -103,7 +103,7 @@ public class Child extends Parent{
 
 > Case 2 : super 키워드 사용 X, 객체생성 시 매개변수 입력 O
 <p><details>
-<summary style="color:#00FF40;">열기/닫기</summary>
+<summary style="color:#00FF40;">Case 2 설명</summary>
 
 {% highlight java %}
 // 부모 클래스 
@@ -140,6 +140,12 @@ public class Child extends Parent{
     }
 }
 {% endhighlight %}
+<blockquote> 출력 결과
+<div>
+부모 매개변수 : 나라<br>
+부모 기본생성자<br>
+자식 매개변수 : 변수</div>
+</blockquote>
 
 <h5>생성자의 생성완료 순서 </h5>
 <p><strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수</strong> 순으로 생성자의 생성이 완료된다. </p>
@@ -150,7 +156,7 @@ public class Child extends Parent{
 
 > Case 3-1 : super 키워드 사용 O, 객체생성 시 매개변수 입력 X (super에 매개변수)
 <p><details>
-<summary style="color:#00FF40;">열기/닫기</summary>
+<summary style="color:#00FF40;">Case 3-1 설명</summary>
 
 {% highlight java %}
 // 부모 클래스 
@@ -188,9 +194,71 @@ public class Child extends Parent{
     }
 }
 {% endhighlight %}
+<blockquote> 출력 결과
+<div>
+부모 매개변수 : 변수<br>
+자식 매개변수 : 이름<br>
+자식 기본생성자</div>
+</blockquote>
 
 <h5>생성자의 생성완료 순서 </h5>
-<p><strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수</strong> 순으로 생성자의 생성이 완료된다. </p>
+<p><strong style="color:#00FFFF">부모매개변수 -> 자식매개변수 -> 자식기본</strong> 순으로 생성자의 생성이 완료된다. </p>
+<h5>흐름도</h5>
+<p>Debug모드로 직접 해보자</p>
+
+</details></p>
+
+
+> Case 3-1 : super 키워드 사용 O, 객체생성 시 매개변수 입력 X (super에 매개변수 X)
+<p><details>
+<summary style="color:#00FF40;">Case 3-1 설명</summary>
+
+{% highlight java %}
+// 부모 클래스
+public class Parent {
+public String nation;
+
+	public Parent() {		// 기본생성자
+		this("나라"); // 부모 생성자중 String 매개변수 하나의 생성자를 불러온다 (존재한다는 가정하에 -> 없으면 에러)
+		System.out.println("부모 기본생성자");
+	}
+	
+	public Parent(String nation) {
+		this.nation = nation;
+		System.out.println("부모 매개변수 : " + nation);
+	}
+}
+
+// 자식 클래스
+public class Child extends Parent{
+public String name;
+
+    public Child() {
+        this("이름"); // 자식 생성자중 String 매개변수 하나의 생성자를 불러온다 (존재한다는 가정하에 -> 없으면 에러)
+        System.out.println("자식 기본생성자");
+    }
+
+    public Child(String name) {
+        super();
+        this.name = name;
+        System.out.println("자식 매개변수 : " + name);
+    }
+
+    public static void main(String[] args) {
+        Child child = new Child();
+    }
+}
+{% endhighlight %}
+<blockquote> 출력 결과
+<div>
+부모 매개변수 : 나라<br>
+부모 기본생성자<br>
+자식 매개변수 : 이름<br>
+자식 기본생성자</div>
+</blockquote>
+
+<h5>생성자의 생성완료 순서 </h5>
+<p><strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수 -> 자식기본</strong> 순으로 생성자의 생성이 완료된다. </p>
 <h5>흐름도</h5>
 <p>Debug모드로 직접 해보자</p>
 
