@@ -47,7 +47,7 @@ comments: 1
 <details>
 <summary style="color:#00FF40;">열기/닫기</summary>
 
-```java
+{% highlight java %}
 // 부모 클래스 
 public class Parent {
 	public String nation;
@@ -83,7 +83,7 @@ public class Child extends Parent{
         // System.out.println(child.nation);    // "생성"이 출력됨
     }
 }
-```
+{% endhighlight %}
 
 > 출력 결과
 >> 부모 매개변수 : 나라<br>
@@ -151,7 +151,7 @@ public class Child extends Parent{
 <details>
 <summary style="color:#00FF40;">열기/닫기</summary>
 
-```java
+{% highlight java %}
 // 부모 클래스 
 public class Parent {
 	public String nation;
@@ -186,7 +186,7 @@ public class Child extends Parent{
         Child child = new Child();
     }
 }
-```
+{% endhighlight %}
 
 <h5>생성자의 생성완료 순서 </h5>
 <p><strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수</strong> 순으로 생성자의 생성이 완료된다. </p>
