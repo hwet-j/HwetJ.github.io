@@ -144,3 +144,50 @@ public class Child extends Parent{
 => (자식) 기본생성자 "자식 매개변수" 출력</p>
 
 </details>
+
+> Case 3 : super 키워드 사용 O, 객체생성 시 매개변수 입력 X
+<details>
+<summary style="color:#00FF40;">열기/닫기</summary>
+
+```java
+// 부모 클래스 
+public class Parent {
+	public String nation;
+	
+	public Parent() {		// 기본생성자
+		this("나라"); // 부모 생성자중 String 매개변수 하나의 생성자를 불러온다 (존재한다는 가정하에 -> 없으면 에러)
+		System.out.println("부모 기본생성자");
+	}
+	
+	public Parent(String nation) {
+		this.nation = nation;
+		System.out.println("부모 매개변수 : " + nation);
+	}
+}
+
+// 자식 클래스
+public class Child extends Parent{
+    public String name;
+
+    public Child() {
+        this("이름"); // 자식 생성자중 String 매개변수 하나의 생성자를 불러온다 (존재한다는 가정하에 -> 없으면 에러)
+        System.out.println("자식 기본생성자");
+    }
+
+    public Child(String name) {
+        super(name);
+        this.name = name;
+        System.out.println("자식 매개변수 : " + name);
+    }
+
+    public static void main(String[] args) {
+        Child child = new Child();
+    }
+}
+```
+
+<p>Case1의 경우 super 키워드가 사용되지 않았고, 객체 생성 시 매개변수입력도 하지않았다. 이 코드의 경우 순서는 <strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수</strong> 순으로 생성자의 생성이 완료된다. </p>
+<p>흐름도를 생각하면 Child child = new Child("변수")로 객체 생성 => (자식) 매개변수생성자 실행 => (자식) 최초로 생략된 super 키워드로 인해 부모클래스의 기본생성자 실행 => (부모) 기본생성자 this 키워드 => (부모) 매개변수생성자 실행(생성완료) => (부모) 기본생성자의 "부모 기본생성자" 출력 
+=> (자식) 기본생성자 "자식 매개변수" 출력</p>
+
+</details>
