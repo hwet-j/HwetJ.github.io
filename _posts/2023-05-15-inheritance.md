@@ -44,6 +44,7 @@ comments: 1
 <p>생성자의 생성 순서는 부모 -> 자식 순으로 생성된다. 좀 더 구체적인 순서는 super키워드에 따라 달라진다.</p>
 
 > Case 1 : super 키워드 사용 X, 객체생성 시 매개변수 입력 X
+
 ```java
 // 부모 클래스 
 public class Parent {
@@ -96,6 +97,7 @@ public class Child extends Parent{
 
 
 > Case 2 : super 키워드 사용 X, 객체생성 시 매개변수 입력 O
+
 ```java
 // 부모 클래스 
 public class Parent {
