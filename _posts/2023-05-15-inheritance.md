@@ -44,6 +44,8 @@ comments: 1
 <p>생성자의 생성 순서는 부모 -> 자식 순으로 생성된다. 좀 더 구체적인 순서는 super키워드에 따라 달라진다.</p>
 
 > Case 1 : super 키워드 사용 X, 객체생성 시 매개변수 입력 X
+<details>
+<summary style="color:#00FF40;">열기/닫기</summary>
 
 ```java
 // 부모 클래스 
@@ -95,8 +97,11 @@ public class Child extends Parent{
 <p>Child child = new Child()로 객체 생성 => (자식) 기본생성자 실행 => (자식) 최초로 생략된 super 키워드로 인해 부모클래스의 기본생성자 실행 => (부모) 기본생성자 this 키워드 => (부모) 매개변수생성자 실행(생성완료) => (부모) 기본생성자의 "부모 기본생성자" 출력 
 (자식) 기본생성자 this 키워드 => (자식) 매개변수생성자 실행(생성완료) => (자식) 기본생성자 "자식 매개변수" 출력</p>
 
+</details>
 
 > Case 2 : super 키워드 사용 X, 객체생성 시 매개변수 입력 O
+<details>
+<summary style="color:#00FF40;">열기/닫기</summary>
 
 ```java
 // 부모 클래스 
@@ -132,9 +137,10 @@ public class Child extends Parent{
         Child child = new Child("변수");
     }
 }
-
 ```
 
 <p>Case1의 경우 super 키워드가 사용되지 않았고, 객체 생성 시 매개변수입력도 하지않았다. 이 코드의 경우 순서는 <strong style="color:#00FFFF">부모매개변수 -> 부모기본 -> 자식매개변수</strong> 순으로 생성자의 생성이 완료된다. </p>
 <p>흐름도를 생각하면 Child child = new Child("변수")로 객체 생성 => (자식) 매개변수생성자 실행 => (자식) 최초로 생략된 super 키워드로 인해 부모클래스의 기본생성자 실행 => (부모) 기본생성자 this 키워드 => (부모) 매개변수생성자 실행(생성완료) => (부모) 기본생성자의 "부모 기본생성자" 출력 
 => (자식) 기본생성자 "자식 매개변수" 출력</p>
+
+</details>
