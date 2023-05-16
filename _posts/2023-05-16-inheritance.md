@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "상속"
-date:   2023-05-15 17:00
+date:   2023-05-16 17:00
 categories: Java
 thumbnail: /assets/img/posts/java.png
 Authors : Hwet
@@ -209,9 +209,9 @@ public class Child extends Parent{
 </details></p>
 
 
-> Case 3-1 : super 키워드 사용 O, 객체생성 시 매개변수 입력 X (super에 매개변수 X)
+> Case 3-2 : super 키워드 사용 O, 객체생성 시 매개변수 입력 X (super에 매개변수 X)
 <p><details>
-<summary style="color:#00FF40;">Case 3-1 설명</summary>
+<summary style="color:#00FF40;">Case 3-2 설명</summary>
 
 {% highlight java %}
 // 부모 클래스
