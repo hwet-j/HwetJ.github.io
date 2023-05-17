@@ -30,27 +30,27 @@ urls:
 
 author_logo: profile.png                        # 작성자 로고 (이미지)
 author: Jeong Hwe Chang                         # 작성자
-author_bio: Hello, my name is Hwe Chang.           #
+author_bio: Hello, my name is Hwe Chang.        # 작성자 소개
 author_email: "ghlckd5424@gmail.com"            # 작성자 이메일
 author_location: Korea, Gyeonggi-do, Seongnam-si    # 작성자 주소
 author_website_url: "https://hwet-j.github.io/"     # 작성자 웹사이트 주소
-typewrite-text: 블로그                               # 초기화면에 보여줄 문구
+typewrite-text: I'm just trying to be a better person than I was yesterday.                               # 초기화면에 보여줄 문구
 hero_cover_img: sample_cover.jpg  # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
-              visibility: true
+#            - company_name: Hunate
+#              company_logo: google.png
+#              company_url: https://www.hunate.co.kr/
+#              designation: Software Engineer
+#              description: Worked on various Google Products
+#              visibility: true
+#            - company_name: Microsoft
+#              company_logo: microsoft.png
+#              company_url: https://microsoft.com
+#              designation: Azure Developer
+#              description: Worked on various Azure Cloud Products
+#              visibility: true
 
 # Education
 author_education_details:
