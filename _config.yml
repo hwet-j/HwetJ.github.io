@@ -1,9 +1,13 @@
-title: Hwet
-subtitle: A Portfolio Jekyll Theme Built for Developers
-description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+# Site Settings
+# https://planbsw.tistory.com/118
+# https://inpa.tistory.com/ 보고 수정하기
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+title: Hwet      # Main title
+subtitle: 공부와 정리하는 습관을 갖기위해 존재하는 블로그   # Sub Title (tagline 키워드도 Sub Title)
+description: >- # this means to ignore newlines until "baseurl:" baseurl:을 만나기 전까지 새로운 라인은 무시한다 는의미
+  Hwet Blog!!
+  I'm just trying to be a better person than I was yesterday.
+url: "https://hwet-j.github.io/" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
@@ -24,14 +28,14 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
-author: Jeong Hwe Chang
-author_bio: Hi, my name is Hwe Chang. I built this site using devlopr-jekyll :D
-author_email: "ghlckd5424@gmail.com"
-author_location: Korea
-author_website_url: "https://hwet-j.github.io/HwetJ.github.io/"
-typewrite-text: 블로그
-hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+author_logo: profile.png                        # 작성자 로고 (이미지)
+author: Jeong Hwe Chang                         # 작성자
+author_bio: Hi, my name is Hwe Chang.           #
+author_email: "ghlckd5424@gmail.com"            # 작성자 이메일
+author_location: Korea, Gyeonggi-do, Seongnam-si    # 작성자 주소
+author_website_url: "https://hwet-j.github.io/"     # 작성자 웹사이트 주소
+typewrite-text: 블로그                               # 초기화면에 보여줄 문구
+hero_cover_img: sample_cover.jpg  # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
