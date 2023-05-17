@@ -30,7 +30,7 @@ urls:
 
 author_logo: profile.png                        # 작성자 로고 (이미지)
 author: Jeong Hwe Chang                         # 작성자
-author_bio: Hi, my name is Hwe Chang.           #
+author_bio: Hello, my name is Hwe Chang.           #
 author_email: "ghlckd5424@gmail.com"            # 작성자 이메일
 author_location: Korea, Gyeonggi-do, Seongnam-si    # 작성자 주소
 author_website_url: "https://hwet-j.github.io/"     # 작성자 웹사이트 주소
