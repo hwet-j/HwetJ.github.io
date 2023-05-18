@@ -31,3 +31,4 @@ TestClass obj = new TestClass();
 > TestClass(): 메모리 생성 후 해당 메모리의 초기화 작업을 담당하는 생성자 
 
 <p>new 키워드 뒤에 있는 내용이 어떤 생성자를 호출하여 초기화를 진행할지 결정한다. </p>
+<p>dd</p>
