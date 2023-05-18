@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "생성자"
-date:   2023-05-16 17:00
+date:   2023-05-18 10:00
 categories: Java
 thumbnail: /assets/img/posts/java.png
 Authors : Hwet
