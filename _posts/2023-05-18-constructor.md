@@ -22,7 +22,7 @@ comments: 1
 <p>인스턴스 생성</p>
 
 ```java
-TestClass obj = new TestClass();
+    TestClass obj = new TestClass();
 ```
 
 > TestClass: 데이터 타입 (기본형 및 사용자가 정의한 타입)
